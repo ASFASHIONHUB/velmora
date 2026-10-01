@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" fill="none" aria-hidden="true">
-  <path fill="#1d1d1c" d="M2 8c12 2 21 7 27 15l3-8 3 8C41 15 50 10 62 8c-7 6-11 12-13 18 5-2 10-2 15 0-8 2-14 6-18 12-5-7-9-11-14-14-5 3-9 7-14 14-4-6-10-10-18-12 5-2 10-2 15 0C13 20 9 14 2 8Z"/>
-  <path fill="#1d1d1c" d="m27 24 5 4 5-4-2 11 7 9H22l7-9-2-11Z"/>
-  <path fill="#1d1d1c" d="m23 42-6 4h30l-6-4H23Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="foil" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5E7A1"/>
+      <stop offset=".28" stop-color="#D4AF37"/>
+      <stop offset=".55" stop-color="#FBF5B7"/>
+      <stop offset=".78" stop-color="#AA771C"/>
+      <stop offset="1" stop-color="#E7CC72"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#foil)" d="M50 85C45 60 20 45 5 30c15 10 30 15 40 20C40 35 30 20 15 10c15 10 27 25 33 35-1-5-3-15-6-25 6 10 8 15 8 20 0-5 2-10 8-20-3 10-5 20-6 25 6-10 18-25 33-35-15 10-25 25-30 40 10-5 25-10 40-20-15 15-40 30-45 55Z"/>
+  <path fill="url(#foil)" d="m43 52 7 7 7-7-3 23 12 14H34l12-14-3-23Z"/>
+  <path fill="url(#foil)" d="m37 90-12 7h50l-12-7H37Z"/>
 </svg>

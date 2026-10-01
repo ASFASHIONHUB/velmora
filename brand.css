@@ -1,6 +1,8 @@
-.eagle-badge{display:inline-grid;place-items:center;background:var(--orange);border-radius:7px;flex:none}
-.eagle-badge img{display:block;width:21px;height:17px}
-.shop-logo .eagle-badge{width:31px;height:31px;margin-right:7px;padding:0;line-height:0;vertical-align:middle}
-.shop-logo .eagle-badge img{width:22px;height:17px}
-.brand .eagle-badge{width:25px;height:25px}
-.brand .eagle-badge img{width:18px;height:14px}
+.eagle-badge{display:inline-grid;place-items:center;background:transparent;border-radius:0;flex:none;filter:drop-shadow(1px 2px 1px #0006)}
+.eagle-badge img{display:block;width:28px;height:28px}
+.shop-logo .eagle-badge{width:38px;height:38px;margin-right:8px;line-height:0;vertical-align:middle}
+.shop-logo .eagle-badge img{width:34px;height:34px}
+.shop-logo{background:linear-gradient(180deg,#f5e7a1 0%,#c3982f 35%,#f7ebaa 56%,#a8751f 78%,#e2c365 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .eagle-badge{width:31px;height:31px}
+.brand .eagle-badge img{width:29px;height:29px}
+.brand>span:last-child{background:linear-gradient(180deg,#f5e7a1 0%,#c3982f 35%,#f7ebaa 56%,#a8751f 78%,#e2c365 100%);-webkit-background-clip:text;background-clip:text;color:transparent}

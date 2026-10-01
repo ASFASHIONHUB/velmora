@@ -1,0 +1,35 @@
+.account-button{font-size:11px!important;color:#5f5b54;text-decoration:none;border-bottom:1px solid var(--line);padding:0 0 5px}
+.shop-overlay[hidden]{display:none}
+.shop-overlay{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;background:#111a;backdrop-filter:blur(3px);padding:18px}
+.shop-dialog,.cart-dialog{position:relative;width:min(100%,460px);max-height:min(90vh,800px);overflow:auto;background:var(--paper);padding:30px;border:1px solid var(--line);box-shadow:0 22px 70px #0004}
+.shop-dialog h2,.cart-dialog h2{font:600 27px "Space Grotesk";letter-spacing:-.06em;margin:0 0 9px}
+.dialog-note,.checkout-note{font-size:12px;line-height:1.5;color:var(--muted);margin:0 0 20px}
+.dialog-close{font-size:27px;color:#6f6b64;line-height:1;padding:3px 7px}
+.shop-dialog>.dialog-close{position:absolute;right:18px;top:15px}
+.shop-dialog form,.cart-dialog form{display:grid;gap:12px}
+.shop-dialog label,.cart-dialog label{display:grid;gap:6px;font-size:11px;font-weight:600;color:#5f5b54}
+.optional-label{font-size:10px;font-weight:400;color:#96928b}
+.shop-dialog input,.shop-dialog textarea,.cart-dialog input,.cart-dialog textarea{width:100%;resize:vertical;padding:10px 11px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink);font:12px "DM Sans",sans-serif}
+.shop-dialog input:focus,.shop-dialog textarea:focus,.cart-dialog input:focus,.cart-dialog textarea:focus{outline:2px solid #264de466;border-color:var(--blue)}
+.dialog-submit{width:100%;justify-content:space-between;margin-top:3px;cursor:pointer;border:0}
+.dialog-feedback{font-size:12px;line-height:1.5;color:#247452;margin:12px 0 0}
+.dialog-feedback:empty{display:none}
+.cart-dialog{width:min(100%,520px);padding:25px 28px}
+.cart-dialog-head{display:flex;justify-content:space-between;align-items:start}
+.cart-dialog-head .eyebrow{margin-bottom:8px}
+.cart-lines{display:grid;gap:0;margin:8px 0}
+.cart-line{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.cart-line b,.cart-line small{display:block}
+.cart-line b{font-size:12px}
+.cart-line small{font-size:10px;color:var(--muted);margin-top:4px}
+.quantity-controls{display:flex;align-items:center;gap:10px}
+.quantity-controls button{width:25px;height:25px;border:1px solid var(--line);background:#fff;font-size:14px}
+.quantity-controls output{min-width:14px;text-align:center;font-size:11px}
+.cart-empty{font-size:12px;line-height:1.5;color:var(--muted);padding:9px 0}
+.cart-total{display:flex;justify-content:space-between;align-items:center;padding:15px 0 7px;border-top:1px solid var(--ink);font-size:12px}
+.cart-total strong{font:600 18px "Space Grotesk"}
+.checkout-note{margin:0 0 15px;font-size:10px}
+.cart-dialog form{gap:10px}
+.cart-dialog form:has(:disabled){opacity:.55}
+.cart-dialog form :disabled{cursor:not-allowed}
+@media(max-width:800px){.shop-actions{gap:12px}.account-button{font-size:10px!important}.shop-dialog,.cart-dialog{padding:24px 20px}.shop-dialog h2,.cart-dialog h2{font-size:24px}}

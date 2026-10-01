@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shop.css" />
   <link rel="stylesheet" href="brand.css" />
+  <link rel="stylesheet" href="shop-flow.css" />
 </head>
 <body>
   <div class="announcement">Free delivery on orders over $100 <span>·</span> Easy 30-day returns</div>
@@ -16,7 +17,7 @@
     <button class="mobile-menu" aria-label="Open menu">☰</button>
     <a class="shop-logo" href="shop.html"><span class="eagle-badge"><img src="eagle-mark.svg" alt="" /></span>Velmora</a>
     <nav aria-label="Shop navigation"><a href="#shop" data-shop-filter="all">Shop all</a><a href="#shop" data-shop-filter="men">Men</a><a href="#shop" data-shop-filter="women">Women</a><a href="#shop" data-shop-filter="children">Children & toys</a></nav>
-    <div class="shop-actions"><button class="shop-search" aria-label="Search">⌕</button><button class="bag-button" aria-label="Shopping bag">Bag <b id="bag-count">0</b></button></div>
+    <div class="shop-actions"><button class="account-button" id="open-account" aria-label="Register or edit customer profile">Account</button><button class="shop-search" aria-label="Search">⌕</button><button class="bag-button" id="open-cart" aria-label="Open shopping bag">Bag <b id="bag-count">0</b></button></div>
   </header>
   <main>
     <section class="hero-shop">
@@ -26,16 +27,47 @@
     <section class="category-strip" aria-label="Collections"><a href="#shop" data-shop-filter="women"><span class="category-art art-women"></span><b>Women</b><small>Soft tailoring & daily layers</small></a><a href="#shop" data-shop-filter="men"><span class="category-art art-men"></span><b>Men</b><small>Relaxed staples & outerwear</small></a><a href="#shop" data-shop-filter="children"><span class="category-art art-kids"></span><b>Children & toys</b><small>Little looks & big imagination</small></a></section>
     <section class="shop-section" id="shop"><div class="shop-heading"><div><p class="eyebrow">Curated for real life</p><h2>Find your next favourite</h2></div><div class="shop-filters"><button class="shop-filter active" data-shop-filter="all">All</button><button class="shop-filter" data-shop-filter="women">Women</button><button class="shop-filter" data-shop-filter="men">Men</button><button class="shop-filter" data-shop-filter="children">Children & toys</button></div></div>
       <div class="product-grid">
-        <article class="product-card" data-product-category="women"><div class="product-art product-knit"><span class="product-badge">BESTSELLER</span><button class="heart" aria-label="Save Everyday rib knit">♡</button></div><div class="product-info"><div><b>Everyday rib knit</b><small>Women · Oat</small></div><strong>$96</strong></div><button class="add-bag" data-product="Everyday rib knit">Add to bag</button></article>
-        <article class="product-card" data-product-category="men"><div class="product-art product-jacket"><button class="heart" aria-label="Save Studio chore jacket">♡</button></div><div class="product-info"><div><b>Studio chore jacket</b><small>Men · Indigo</small></div><strong>$188</strong></div><button class="add-bag" data-product="Studio chore jacket">Add to bag</button></article>
-        <article class="product-card" data-product-category="women"><div class="product-art product-blouse"><button class="heart" aria-label="Save Soft drape blouse">♡</button></div><div class="product-info"><div><b>Soft drape blouse</b><small>Women · Sky</small></div><strong>$88</strong></div><button class="add-bag" data-product="Soft drape blouse">Add to bag</button></article>
-        <article class="product-card" data-product-category="children"><div class="product-art product-toy"><span class="product-badge orange">NEW</span><button class="heart" aria-label="Save Rainbow knit buddy">♡</button></div><div class="product-info"><div><b>Rainbow knit buddy</b><small>Children & toys · Multi</small></div><strong>$36</strong></div><button class="add-bag" data-product="Rainbow knit buddy">Add to bag</button></article>
+        <article class="product-card" data-product-category="women"><div class="product-art product-knit"><span class="product-badge">BESTSELLER</span><button class="heart" aria-label="Save Everyday rib knit">♡</button></div><div class="product-info"><div><b>Everyday rib knit</b><small>Women · Oat</small></div><strong>$96</strong></div><button class="add-bag" data-product="Everyday rib knit" data-price="96">Add to bag</button></article>
+        <article class="product-card" data-product-category="men"><div class="product-art product-jacket"><button class="heart" aria-label="Save Studio chore jacket">♡</button></div><div class="product-info"><div><b>Studio chore jacket</b><small>Men · Indigo</small></div><strong>$188</strong></div><button class="add-bag" data-product="Studio chore jacket" data-price="188">Add to bag</button></article>
+        <article class="product-card" data-product-category="women"><div class="product-art product-blouse"><button class="heart" aria-label="Save Soft drape blouse">♡</button></div><div class="product-info"><div><b>Soft drape blouse</b><small>Women · Sky</small></div><strong>$88</strong></div><button class="add-bag" data-product="Soft drape blouse" data-price="88">Add to bag</button></article>
+        <article class="product-card" data-product-category="children"><div class="product-art product-toy"><span class="product-badge orange">NEW</span><button class="heart" aria-label="Save Rainbow knit buddy">♡</button></div><div class="product-info"><div><b>Rainbow knit buddy</b><small>Children & toys · Multi</small></div><strong>$36</strong></div><button class="add-bag" data-product="Rainbow knit buddy" data-price="36">Add to bag</button></article>
       </div>
     </section>
     <section class="story-band"><div><p class="eyebrow">Small shop, thoughtful choices</p><h2>Made for your<br><em>whole household.</em></h2></div><p>We choose pieces that work hard, feel good, and make room for a little more joy. From first layers to after-school playtime, Velmora is here for the everyday.</p><a href="#shop">Explore the edit ↗</a></section>
   </main>
   <footer><a class="shop-logo" href="shop.html"><span class="eagle-badge"><img src="eagle-mark.svg" alt="" /></span>Velmora</a><p>Everyday pieces for every kind of life.</p><div><a href="admin.html">Store management</a><a href="#shop">Shop</a><a href="#shop">Contact</a></div></footer>
-  <div class="cart-toast" id="cart-toast">Added to your bag <span>✓</span></div>
+  <div class="cart-toast" id="cart-toast" role="status" aria-live="polite">Added to your bag <span>✓</span></div>
+  <div class="shop-overlay" id="account-overlay" hidden>
+    <section class="shop-dialog" role="dialog" aria-modal="true" aria-labelledby="account-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Close">×</button>
+      <p class="eyebrow">Customer account</p><h2 id="account-title">Create your profile</h2>
+      <p class="dialog-note">Save your details in this browser for a quicker demo checkout. No password or payment details are collected.</p>
+      <form id="profile-form">
+        <label>Full name<input name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></label>
+        <label>Phone <span class="optional-label">Optional</span><input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Phone number"></label>
+        <label>Delivery address <span class="optional-label">Optional</span><textarea name="address" autocomplete="street-address" rows="2" maxlength="300" placeholder="Street, city, postal code"></textarea></label>
+        <button class="shop-cta dialog-submit" type="submit">Save profile <span>↗</span></button>
+      </form>
+      <p class="dialog-feedback" id="profile-feedback" role="status"></p>
+    </section>
+  </div>
+  <div class="shop-overlay" id="cart-overlay" hidden>
+    <section class="cart-dialog" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-dialog-head"><div><p class="eyebrow">Your selection</p><h2 id="cart-title">Shopping bag</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close">×</button></div>
+      <div class="cart-lines" id="cart-lines"></div>
+      <p class="cart-empty" id="cart-empty">Your bag is empty. Find something you love in the shop.</p>
+      <div class="cart-total"><span>Demo order total</span><strong id="cart-total">$0.00</strong></div>
+      <p class="checkout-note">Demo checkout only. No payment will be taken.</p>
+      <form id="checkout-form">
+        <label>Full name<input name="name" autocomplete="name" required maxlength="100"></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+        <label>Delivery address<textarea name="address" autocomplete="street-address" rows="2" required maxlength="300"></textarea></label>
+        <button class="shop-cta dialog-submit" type="submit">Place demo order <span>↗</span></button>
+      </form>
+      <p class="dialog-feedback" id="order-feedback" role="status"></p>
+    </section>
+  </div>
   <script src="shop.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+.eagle-badge{display:inline-grid;place-items:center;background:var(--orange);border-radius:7px;flex:none}
+.eagle-badge img{display:block;width:21px;height:17px}
+.shop-logo .eagle-badge{width:31px;height:31px;margin-right:7px;padding:0;line-height:0;vertical-align:middle}
+.shop-logo .eagle-badge img{width:22px;height:17px}
+.brand .eagle-badge{width:25px;height:25px}
+.brand .eagle-badge img{width:18px;height:14px}

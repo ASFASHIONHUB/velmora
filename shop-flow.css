@@ -30,6 +30,7 @@
 .cart-total strong{font:600 18px "Space Grotesk"}
 .checkout-note{margin:0 0 15px;font-size:10px}
 .cart-dialog form{gap:10px}
+.cart-dialog form[hidden]{display:none}
 .cart-dialog form:has(:disabled){opacity:.55}
 .cart-dialog form :disabled{cursor:not-allowed}
 @media(max-width:800px){.shop-actions{gap:12px}.account-button{font-size:10px!important}.shop-dialog,.cart-dialog{padding:24px 20px}.shop-dialog h2,.cart-dialog h2{font-size:24px}}
